@@ -1722,7 +1722,7 @@ section {
   min-height: 25em;
   background-color: var(--color-secondary);
   background-image: url("../img/logo3.JPG");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   object-fit: fill;
   position: relative;
