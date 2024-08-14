@@ -1722,7 +1722,7 @@ section {
   min-height: 50vh;
   background-color: var(--color-secondary);
   background-image: url("../img/logo2.JPG");
-  background-size: fill;
+  background-size: auto;
   background-position: center;
   position: relative;
   padding: 120px 0 60px 0;
