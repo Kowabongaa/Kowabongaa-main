@@ -1717,12 +1717,12 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
+  width: 100vh;
   height: 100vh;
   min-height: 50vh;
   background-color: var(--color-secondary);
   background-image: url("../img/logo2.JPG");
-  background-size: 100% auto;
+  background-size: 100% cover;
   background-position: center calc(100% - 50px);
   background-position: center;
   background-repeat: no-repeat;
