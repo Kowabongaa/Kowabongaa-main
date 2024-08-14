@@ -1792,7 +1792,6 @@ section {
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
-  text-align: center;
 }
 
 .hero .stats-item span:after {
@@ -1814,7 +1813,6 @@ section {
   font-family: var(--font-primary);
   font-size: 15px;
   font-weight: 600;
-  text-align: center; /* Add this line */
 }
 
 /*--------------------------------------------------------------
