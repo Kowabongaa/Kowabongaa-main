@@ -1211,13 +1211,12 @@ section {
 
 .team .member img {
   margin: -1px -1px 30px -1px;
+  max-height: 350px;
+  object-fit: cover;
 }
 
 .team .member .member-content {
   padding: 0 20px 30px 20px;
-  max-height: 350px;
-  width:auto;
-  object-fit: cover;
 }
 
 .team .member h4 {
