@@ -1200,7 +1200,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Our Team Section
+# Our Team Section For Members
 --------------------------------------------------------------*/
 .team .member {
   text-align: center;
@@ -1262,6 +1262,9 @@ section {
   border: 1px solid rgba(14, 29, 52, 0.15);
 }
 
+/*--------------------------------------------------------------
+# Our Team Section For Director
+--------------------------------------------------------------*/
 .team .Director img {
   margin: -1px -1px 30px -1px;
 }
@@ -1311,6 +1314,13 @@ section {
 
 .team .Director  .social a:hover {
   color: var(--color-primary);
+}
+
+.team .Director {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid rgba(14, 29, 52, 0.15);
 }
 
 .team .Director .social i {
