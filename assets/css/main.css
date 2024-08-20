@@ -1202,7 +1202,7 @@ section {
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
-.team .member .Director {
+.team .member {
   text-align: center;
   margin-bottom: 20px;
   background: #fff;
@@ -1217,7 +1217,7 @@ section {
   padding: 0 20px 30px 20px;
 }
 
-.team .member .Director h4 {
+.team .member  h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
@@ -1227,39 +1227,93 @@ section {
   min-height: 350px;
   object-fit: fill;
 }
-.team .Director img {
-  min-height: 486px;
-  object-fit: fill;
-}
 
-.team .member .Director span {
+.team .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #6c757d;
 }
 
-.team .member .Director p {
+.team .member p {
   padding-top: 10px;
   font-size: 14px;
   font-style: italic;
   color: #6c757d;
 }
 
-.team .member .Director .social {
+.team .member .social {
   margin-top: 15px;
 }
 
-.team .member .Director .social a {
+.team .member .social a {
   color: rgba(14, 29, 52, 0.5);
   transition: 0.3s;
 }
 
-.team .member .Director .social a:hover {
+.team .member  .social a:hover {
   color: var(--color-primary);
 }
 
-.team .member .Director .social i {
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid rgba(14, 29, 52, 0.15);
+}
+
+.team .Director img {
+  margin: -1px -1px 30px -1px;
+}
+
+.team .Director .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.team .Director  h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.team .Director .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .Director img {
+  min-height: 486px;
+  object-fit: fill;
+}
+
+.team .Director span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.team .Director p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.team .Director .social {
+  margin-top: 15px;
+}
+
+.team .Director .social a {
+  color: rgba(14, 29, 52, 0.5);
+  transition: 0.3s;
+}
+
+.team .Director  .social a:hover {
+  color: var(--color-primary);
+}
+
+.team .Director .social i {
   font-size: 18px;
   margin: 0 2px;
 }
