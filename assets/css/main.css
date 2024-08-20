@@ -1225,7 +1225,6 @@ section {
 
 .team .member img {
   max-height: 350px;
-  width: 100%;
   object-fit: cover;
 }
 .team .member span {
@@ -1726,7 +1725,7 @@ section {
   height: 100vh;
   min-height: 25em;
   background-color: var(--color-secondary);
-  background-image: url("../img/logo3.JPG");
+  background-image: url("../img/IMG_PT\ SKE\ \(16\)-Rev2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
