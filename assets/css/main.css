@@ -1202,7 +1202,7 @@ section {
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
-.team .member {
+.team .member .Director {
   text-align: center;
   margin-bottom: 20px;
   background: #fff;
@@ -1217,7 +1217,7 @@ section {
   padding: 0 20px 30px 20px;
 }
 
-.team .member h4 {
+.team .member .Director h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
@@ -1232,34 +1232,34 @@ section {
   object-fit: fill;
 }
 
-.team .member span {
+.team .member .Director span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #6c757d;
 }
 
-.team .member p {
+.team .member .Director p {
   padding-top: 10px;
   font-size: 14px;
   font-style: italic;
   color: #6c757d;
 }
 
-.team .member .social {
+.team .member .Director .social {
   margin-top: 15px;
 }
 
-.team .member .social a {
+.team .member .Director .social a {
   color: rgba(14, 29, 52, 0.5);
   transition: 0.3s;
 }
 
-.team .member .social a:hover {
+.team .member .Director .social a:hover {
   color: var(--color-primary);
 }
 
-.team .member .social i {
+.team .member .Director .social i {
   font-size: 18px;
   margin: 0 2px;
 }
