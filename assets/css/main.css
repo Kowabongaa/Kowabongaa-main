@@ -1224,7 +1224,7 @@ section {
 }
 
 .team .member img {
-  max-height: 350px;
+  min-height: 456px;
   object-fit: fill;
 }
 .team .member span {
