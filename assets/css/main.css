@@ -1732,7 +1732,7 @@ section {
   object-fit: fill;
   position: relative;
   padding: 120px 0 60px 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .hero h2 {
