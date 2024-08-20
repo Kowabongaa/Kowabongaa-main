@@ -328,7 +328,7 @@ section {
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -1732,7 +1732,7 @@ section {
   object-fit: fill;
   position: relative;
   padding: 120px 0 60px 0;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hero h2 {
