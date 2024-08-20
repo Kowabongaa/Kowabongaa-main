@@ -1211,8 +1211,6 @@ section {
 
 .team .member img {
   margin: -1px -1px 30px -1px;
-  max-height: 350px;
-  object-fit: cover;
 }
 
 .team .member .member-content {
@@ -1225,6 +1223,10 @@ section {
   font-size: 18px;
 }
 
+.team .member img {
+  max-height: 350px;
+  object-fit: cover;
+}
 .team .member span {
   font-style: italic;
   display: block;
