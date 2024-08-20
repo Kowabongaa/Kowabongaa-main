@@ -1224,7 +1224,7 @@ section {
 }
 
 .team .member img {
-  min-height: 350px;
+  max-height: 350px;
   object-fit: fill;
 }
 
@@ -1265,6 +1265,12 @@ section {
 /*--------------------------------------------------------------
 # Our Team Section For Director
 --------------------------------------------------------------*/
+.team .Director {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid rgba(14, 29, 52, 0.15);
+}
 .team .Director img {
   margin: -1px -1px 30px -1px;
 }
