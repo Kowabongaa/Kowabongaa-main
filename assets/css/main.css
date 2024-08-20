@@ -1225,7 +1225,7 @@ section {
 
 .team .member img {
   max-height: 350px;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 .team .member span {
   font-style: italic;
