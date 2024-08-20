@@ -1932,3 +1932,7 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+.zoom {
+  transform: scale(1.1); 
+}
