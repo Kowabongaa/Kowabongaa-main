@@ -1224,9 +1224,14 @@ section {
 }
 
 .team .member img {
-  min-height: 456px;
+  min-height: 350px;
   object-fit: fill;
 }
+.team .Director img {
+  min-height: 486px;
+  object-fit: fill;
+}
+
 .team .member span {
   font-style: italic;
   display: block;
