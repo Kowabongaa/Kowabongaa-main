@@ -1779,160 +1779,110 @@
   }
 
   * {box-sizing:border-box}
-  /* Global Styles */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-/* Main Container */
-.main {
-  height: 100vh;
-  width: 100%;
-}
-
-/* Slide Wrapper and Slide */
-.wrapper,
-.slide {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.slide {
-  overflow: hidden;
-  position: relative;
-}
-
-/* Overlay Effect */
-.slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 10;
-}
-
-/* Slide Image */
-.slide .image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* Text Content */
-.slide .image-data {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-  z-index: 100;
-}
-
-.image-data span.text {
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.image-data h2 {
-  font-size: 45px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-a.button {
-  display: inline-block;
-  padding: 10px 25px;
-  border-radius: 25px;
-  color: #333;
-  background: #fff;
-  text-decoration: none;
-  margin-top: 25px;
-  transition: all 0.3s ease;
-}
-
-a.button:hover {
-  color: #fff;
-  background-color: #c87e4f;
-}
-
-/* Swiper Navigation Buttons */
-.nav-btn {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1000;
-  transition: background 0.3s ease;
-}
-
-.nav-btn:hover {
-  background: rgba(255, 255, 255, 0.4);
-}
-
-.swiper-button-next {
-  right: 50px;
-}
-
-.swiper-button-prev {
-  left: 50px;
-}
-
-.nav-btn::before {
-  font-size: 25px;
-  color: #fff;
-}
-
-/* Swiper Pagination */
-.swiper-pagination-bullet {
-  opacity: 1;
-  height: 12px;
-  width: 12px;
-  background-color: #fff;
-  visibility: hidden;
-  transition: background-color 0.3s ease, border 0.3s ease;
-}
-
-.swiper-pagination-bullet-active {
-  border: 2px solid #fff;
-  background-color: #c87e4f;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
+  
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .main {
+    height: 100vh;
+    width: 100%;
+  }
+  .wrapper,
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .slide {
+    overflow: hidden;
+  }
+  .slide::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  .slide .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .slide .image-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+  }
+  .image-data span.text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .image-data h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+  }
+  a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+  }
+  a.button:hover {
+    color: #fff;
+    background-color: #c87e4f;
+  }
+  /* swiper button css */
   .nav-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .nav-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .swiper-button-next {
+    right: 50px;
+  }
+  .swiper-button-prev {
+    left: 50px;
+  }
+  .nav-btn::before,
+  .nav-btn::after {
+    font-size: 25px;
+    color: #fff;
+  }
+  .swiper-pagination-bullet {
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
     visibility: hidden;
   }
-
-  .swiper-pagination-bullet {
-    visibility: visible;
+  .swiper-pagination-bullet-active {
+    border: 2px solid #fff;
+    background-color: #c87e4f;
   }
-
-  .image-data h2 {
-    font-size: 28px;
+  @media screen and (max-width: 768px) {
+    .nav-btn {
+      visibility: hidden;
+    }
+    .swiper-pagination-bullet {
+      visibility: visible;
+    }
   }
-
-  a.button {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-}
