@@ -1886,3 +1886,12 @@
       visibility: visible;
     }
   }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #dddddd53; 
+    margin: 20px 0; 
+    border: none;
+  }
+  
