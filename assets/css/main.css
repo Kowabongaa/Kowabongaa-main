@@ -2085,3 +2085,14 @@
     font-size: 14px;
   }
 }
+
+sup {
+  top: auto;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
