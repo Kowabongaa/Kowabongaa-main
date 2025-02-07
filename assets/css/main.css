@@ -2228,3 +2228,51 @@ sub, sup {
   color: #555;
   margin: 5px 0 0 0;
 }
+
+/* Section Title Styling */
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d42ff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0d42ff;
+  margin: 5px auto 0;
+}
+
+/* Table Styling */
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 16px;
+}
+
+.project-table th, 
+.project-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.project-table th {
+  background-color: #0e1d34;
+  color: white;
+  text-transform: uppercase;
+}
+
+.project-table tr:nth-child(even) {
+  background-color: #f3f6fc;
+}
+
+.project-table td {
+  color: #0a0d13;
+}
