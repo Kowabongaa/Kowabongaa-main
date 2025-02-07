@@ -2197,3 +2197,18 @@ sub, sup {
 .read-more:hover::after {
   transform: translateX(5px);
 }
+
+.category {
+  margin-bottom: 40px;
+}
+
+.category h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-secondary);
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--color-primary);
+  display: inline-block;
+  padding-bottom: 5px;
+}
