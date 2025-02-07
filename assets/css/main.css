@@ -2197,3 +2197,34 @@ sub, sup {
 .read-more:hover::after {
   transform: translateX(5px);
 }
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-item strong {
+  font-size: 18px;
+  color: var(--color-primary);
+}
+
+.project-item em {
+  font-size: 16px;
+  color: var(--color-secondary);
+  font-style: italic;
+}
+
+.project-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0 0;
+}
