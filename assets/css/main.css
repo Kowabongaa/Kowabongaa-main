@@ -2098,3 +2098,8 @@ sub, sup {
   position: relative;
   vertical-align: baseline;
 }
+
+.hero-logo {
+  width: 200px; 
+  height: auto;
+}
