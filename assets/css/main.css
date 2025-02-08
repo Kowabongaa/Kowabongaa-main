@@ -2281,3 +2281,18 @@ sub, sup {
   width: 300px; 
   height: auto;
 }
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-item {
+  background: #f3f3f3;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
