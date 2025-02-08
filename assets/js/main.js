@@ -143,14 +143,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function filterItems(category) {
-  const items = document.querySelectorAll('.project-item');
-
-  items.forEach(item => {
-    if (category === 'all' || item.getAttribute('data-category') === category) {
-      item.style.display = 'block';  // Show item
-    } else {
-      item.style.display = 'none';   // Hide item
-    }
-  });
-}
