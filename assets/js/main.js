@@ -144,16 +144,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function openModal(modalId) {
-  document.getElementById(modalId).style.display = "block";
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "block";
+  }
 }
 
 function closeModal(modalId) {
-  document.getElementById(modalId).style.display = "none";
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = "none";
+  }
 }
 
 window.onclick = function(event) {
   const modals = document.querySelectorAll(".modal");
-  modals.forEach((modal) => {
+  modals.forEach(modal => {
     if (event.target === modal) {
       modal.style.display = "none";
     }
