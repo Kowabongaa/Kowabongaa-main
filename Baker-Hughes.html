@@ -91,19 +91,98 @@
       </nav>
     </div><!-- End Breadcrumbs -->
 
-    <section class="sample-page">        
-      
-      <div class="container" data-aos="fade-up">
-        <img src="assets/img/gearbox.jpg" alt="Smaller image" width="400" height="300" style="float: left; margin: 0 20px 10px 0;">
-        <h3 style="overflow: auto;">Gearbox and Gear Couplings</h3>
-        <p style="overflow: auto;">
-          Spektrum Krisindo Elektrika is the ONLY one channel partners for Gearbox LUFKIN and ALLEN GEARS in Indonesia.
-
-          Providing reliable power transmission technologies and services to solve the unique needs across industry segments.
-        </p>
-        <button onclick="window.open('https://www.bakerhughes.com/lufkin-gears-allen-gears-gearboxes-gear-couplings', '_blank');">Learn more</button>
+    <div class="product-grid">
+      <!-- Product Item 1 -->
+      <div class="product-item">
+        <img src="assets/img/lufkin_gearbox.jpg" alt="Product Image">
+        <h2>High-speed parallel-shaft gearboxes</h2>
+        <p>Our Lufkin Gears and Allen Gears brands bring a deep history of industry-leading technology to demanding high-speed mechanical-drive, turbo machinery, and marine-propulsion applications. </p>
+          <button class="details-btn" onclick="openModal('modal1')">View Details</button>
       </div>
-    </section>
+  
+      <!-- Product Item 2 -->
+      <div class="product-item">
+        <img src="assets/img/signify_product2.jpg" alt="">
+        <h2>GreenSpace G6</h2>
+        <p>Philips GreenSpace G6 builds on the GreenSpace family’s reputation for superb
+          performance, extremely low energy use, and high visual comfort. </p>
+          <button class="details-btn" onclick="openModal('modal2')">View Details</button>
+      </div>
+  
+      <!-- Product Item 3 -->
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300x200" alt="">
+        <h2>Product 3</h2>
+        <p>Proin in lacus a lacus venenatis pharetra.</p>
+        <button class="details-btn" onclick="openModal('modal3')">View Details</button>
+      </div>
+  
+       <!-- Modal 1 -->
+       <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h2>Specifications</h2>
+          <div class="modal-body">
+            <div class="modal-image">
+              <img src="assets/img/signify_product1.jpg" alt="Product Image">
+            </div>
+          <div class="product-details">
+            <table class="details-table">
+              <tr>
+                <th>Feature</th>
+                <td>Purpose-built to exacting customer specifications and ISO/AGMA/API standards</td>
+              </tr>
+              <tr>
+                <th>Design</th>
+                <td>Robust designs with rigid case construction</td>
+              </tr>
+              <tr>
+                <th>Speed & Power</th>
+                <td>Speeds up to 70,000 rpm and power up to 100 MW</td>
+              </tr>
+              <tr>
+                <th>Performance</th>
+                <td>Low noise, low vibration, and industry-leading material specifications</td>
+              </tr>
+              <tr>
+                <th>Maintenance</th>
+                <td>Extended maintenance intervals</td>
+              </tr>
+              <tr>
+                <th>Casings</th>
+                <td>Cast and fabricated casings</td>
+              </tr>
+              <tr>
+                <th>Cost Efficiency</th>
+                <td>Low overall cost of ownership with exceptional reliability and long life</td>
+              </tr>
+              <tr>
+                <th>Integration</th>
+                <td>Integrated lubrication, vibration, and temperature monitoring</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Product 2 Details</h2>
+        <p>Here’s some detailed information about Product 2. Vestibulum fermentum sem nec odio tincidunt, ut feugiat elit sodales.</p>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Product 3 Details</h2>
+        <p>Here’s some detailed information about Product 2. Vestibulum fermentum sem nec odio tincidunt, ut feugiat elit sodales.</p>
+      </div>
+    </div>
+  </div>
 
   </main><!-- End #main -->
 
