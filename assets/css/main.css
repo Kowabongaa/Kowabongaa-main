@@ -2373,8 +2373,57 @@ sub, sup {
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .details-btn:hover {
   background: #003bb5;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #0e1d34;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #333;
 }

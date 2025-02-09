@@ -100,7 +100,7 @@
         <p>RoadFlair Gen2 is brand new design road lighting product family, set to meet
           customers’ all-round requirements, including high lumen efficacy for energy saving
           and sustainability.</p>
-        <a href="#" class="details-btn">View Details</a>
+          <button class="details-btn" onclick="openModal('modal1')">View Details</button>
       </div>
   
       <!-- Product Item 2 -->
@@ -109,7 +109,7 @@
         <h2>GreenSpace G6</h2>
         <p>Philips GreenSpace G6 builds on the GreenSpace family’s reputation for superb
           performance, extremely low energy use, and high visual comfort. </p>
-        <a href="#" class="details-btn">View Details</a>
+          <button class="details-btn" onclick="openModal('modal2')">View Details</button>
       </div>
   
       <!-- Product Item 3 -->
@@ -117,11 +117,38 @@
         <img src="https://via.placeholder.com/300x200" alt="">
         <h2>Product 3</h2>
         <p>Proin in lacus a lacus venenatis pharetra.</p>
-        <a href="#" class="details-btn">View Details</a>
+        <button class="details-btn" onclick="openModal('modal3')">View Details</button>
       </div>
   
       <!-- Add more products as needed -->
+       <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Product 1 Details</h2>
+        <p>Here’s some detailed information about Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
     </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Product 2 Details</h2>
+        <p>Here’s some detailed information about Product 2. Vestibulum fermentum sem nec odio tincidunt, ut feugiat elit sodales.</p>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Product 3 Details</h2>
+        <p>Here’s some detailed information about Product 2. Vestibulum fermentum sem nec odio tincidunt, ut feugiat elit sodales.</p>
+      </div>
+    </div>
+  </div>
+
 
   </main><!-- End #main -->
 
