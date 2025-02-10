@@ -79,7 +79,7 @@
             <div class="container position-relative">
               <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 text-center">
-                  <h2>News</h2>
+                  <h2>Authorized partners</h2>
                 </div>
               </div>
             </div>
@@ -88,33 +88,56 @@
             <div class="container">
               <ol>
                 <li><a href="index.html">Home</a></li>
-                <li>News</li>
+                <li>Certifications</li>
               </ol>
             </div>
           </nav>
         </div><!-- End Breadcrumbs -->
 
-        <div class="container">
-            <h2>Download Available Files</h2>
-            <ul class="file-list">
-              <li class="file-item">
-                <span class="file-name">Project Document 1</span>
-                <a href="files/project-doc-1.pdf" class="download-button" download>Download</a>
-              </li>
-              <li class="file-item">
-                <span class="file-name">Project Presentation</span>
-                <a href="files/project-presentation.pptx" class="download-button" download>Download</a>
-              </li>
-              <li class="file-item">
-                <span class="file-name">Technical Specifications</span>
-                <a href="files/technical-specs.docx" class="download-button" download>Download</a>
-              </li>
-              <li class="file-item">
-                <span class="file-name">Sample Report</span>
-                <a href="files/sample-report.xlsx" class="download-button" download>Download</a>
-              </li>
-            </ul>
-          </div>
+        <h1>Our Certifications</h1>
+<div class="certifications-container">
+  <div class="certification-card">
+    <div class="certification-image">
+      <img src="cert1.jpg" alt="Certification 1">
+    </div>
+    <div class="certification-content">
+      <div class="certification-title">ISO 9001:2015 Certification</div>
+      <div class="certification-description">Quality Management System certification ensuring top-notch processes.</div>
+      <button class="view-button" onclick="openModal('modal1')">View Certificate</button>
+    </div>
+  </div>
+
+  <div class="certification-card">
+    <div class="certification-image">
+      <img src="cert2.jpg" alt="Certification 2">
+    </div>
+    <div class="certification-content">
+      <div class="certification-title">ISO 14001:2015 Certification</div>
+      <div class="certification-description">Environmental Management System certification demonstrating our commitment to sustainability.</div>
+      <button class="view-button" onclick="openModal('modal2')">View Certificate</button>
+    </div>
+  </div>
+
+  <!-- Add more certification cards as needed -->
+</div>
+
+<!-- Modal for Certificate 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+    <h2>ISO 9001:2015 Certification</h2>
+    <img class="modal-image" src="cert1.jpg" alt="Certificate 1">
+  </div>
+</div>
+
+<!-- Modal for Certificate 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+    <h2>ISO 14001:2015 Certification</h2>
+    <img class="modal-image" src="cert2.jpg" alt="Certificate 2">
+  </div>
+</div>
 
     </main>
 
