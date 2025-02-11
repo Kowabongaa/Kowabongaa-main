@@ -2346,9 +2346,9 @@ sub, sup {
 }
 
 .product-item img {
-  width: 80%;
+  width: 800%;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 5px;
   margin-bottom: 15px;
 }
