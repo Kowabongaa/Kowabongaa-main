@@ -2421,15 +2421,11 @@ sub, sup {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   overflow-y: auto;
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Animation */
-  opacity: 0;
-  transform: translateY(-20px);
 }
 
 .modal.show-modal {
   display: block;
   opacity: 1;
-  transform: translateY(0);
 }
 
 .modal-content {
