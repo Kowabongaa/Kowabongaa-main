@@ -154,7 +154,6 @@ document.addEventListener('click', function (event) {
     }
   }
 
-
   if (target.classList.contains('close')) {
     const modalId = target.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
