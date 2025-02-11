@@ -144,16 +144,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function openModal(modalId) {
+  closeAllModals(); 
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.style.display = "block";
+    modal.classList.add("show-modal"); 
   }
 }
 
 function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
-    modal.style.display = "none";
+    modal.classList.remove("show-modal"); 
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300); 
   }
 }
 
@@ -161,7 +166,15 @@ window.onclick = function(event) {
   const modals = document.querySelectorAll(".modal");
   modals.forEach(modal => {
     if (event.target === modal) {
-      modal.style.display = "none";
+      closeModal(modal.id);
     }
   });
 };
+
+function closeAllModals() {
+  const modals = document.querySelectorAll(".modal");
+  modals.forEach(modal => {
+    modal.style.display = "none";
+    modal.classList.remove("show-modal"); 
+  });
+}
