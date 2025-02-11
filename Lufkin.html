@@ -94,60 +94,27 @@
     </div><!-- End Breadcrumbs -->
 
     <div class="product-grid">
-        <!-- Product Item 1: High-speed Parallel-shaft Gearboxes -->
         <div class="product-item">
-          <img src="assets/img/gearbox.jpg" alt="High-speed Parallel-shaft Gearbox">
+        <img src="assets/img/gearbox.jpg" alt="High-speed Parallel-shaft Gearbox">
           <h2>High-speed Parallel-shaft Gearboxes</h2>
-          <p>Purpose-built for demanding high-speed mechanical-drive and turbo machinery applications with speeds up to 70,000 rpm and power up to 100 MW.</p>
-          <button class="details-btn" onclick="openModal('modal1')">View Details</button>
+          <button class="details-btn" data-modal="modal1">View Details</button>
         </div>
       
-        <!-- Product Item 2: Compressors -->
         <div class="product-item">
-          <img src="assets/img/compressor.jpg" alt="Compressors">
           <h2>Compressors</h2>
-          <p>High-performance gears for compressors in offshore platforms, refineries, and petrochemical plants at speeds up to 40,000 rpm.</p>
-          <button class="details-btn" onclick="openModal('modal2')">View Details</button>
+          <button class="details-btn" data-modal="modal2">View Details</button>
         </div>
       
-        <!-- Product Item 3: Pumps -->
         <div class="product-item">
-          <img src="assets/img/pumps.jpg" alt="Pumps">
           <h2>Pumps</h2>
-          <p>Reliable solutions for axial, centrifugal, and screw type pumps with power up to 40 MW and speeds up to 25,000 RPM.</p>
-          <button class="details-btn" onclick="openModal('modal3')">View Details</button>
-        </div>
-      
-        <!-- Product Item 4: Generators -->
-        <div class="product-item">
-          <img src="assets/img/generators.jpg" alt="Generators">
-          <h2>Generators</h2>
-          <p>Connects steam and gas turbines up to 90 MW to generators with integrated clutch and brake systems for flexibility and uptime.</p>
-          <button class="details-btn" onclick="openModal('modal4')">View Details</button>
-        </div>
-      
-        <!-- Product Item 5: Fans and Blowers -->
-        <div class="product-item">
-          <img src="assets/img/fans and blowers.jpg" alt="Fans and Blowers">
-          <h2>Fans and Blowers</h2>
-          <p>Designed for high-efficiency applications up to 12 MW in chemical, petrochemical, and power plants.</p>
-          <button class="details-btn" onclick="openModal('modal5')">View Details</button>
+          <button class="details-btn" data-modal="modal3">View Details</button>
         </div>
       </div>
-  
-      <!-- Product Item 3 -->
-      <!-- <div class="product-item">
-        <img src="https://via.placeholder.com/300x200" alt="">
-        <h2>Product 3</h2>
-        <p>Proin in lacus a lacus venenatis pharetra.</p>
-        <button class="details-btn" onclick="openModal('modal3')">View Details</button>
-      </div> -->
-  
-       <!-- Modal 1 -->
-       <div id="modal1" class="modal">
+      
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal">
         <div class="modal-content">
-          <span class="close" onclick="closeModal('modal1')">&times;</span>
-          <h2>Specifications</h2>
+          <span class="close" data-modal="modal1">&times;</span>
           <div class="modal-body">
             <div class="product-details">
               <table class="details-table" border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
@@ -170,22 +137,6 @@
                     </ul>
                   </td>
                 </tr>
-                <tr>
-                  <th>Compressors</th>
-                  <td>Lufkin Gears drive compressors in offshore platforms, refineries, and petrochemical plants with motors, engines, and turbines at up to 90 MW and speeds of 40,000 rpm, ensuring reliability for critical operations.</td>
-                </tr>
-                <tr>
-                  <th>Pumps</th>
-                  <td>Used in critical pump applications worldwide, Lufkin Gears drive axial, centrifugal, and screw pumps with power up to 40 MW and speeds of 25,000 rpm, providing decades of dependable service.</td>
-                </tr>
-                <tr>
-                  <th>Generators</th>
-                  <td>In power generation, Lufkin Gears connect steam and gas turbines up to 90 MW to generators. Integrated clutch and brake systems ensure flexibility and maximum uptime for plant operations.</td>
-                </tr>
-                <tr>
-                  <th>Fans & Blowers</th>
-                  <td>For applications up to 12 MW, Lufkin Gears drive fans and blowers in industries such as petrochemical, chemical, and power plants, offering high efficiency and customer-specific designs.</td>
-                </tr>
               </table>
             
               <div class="image-gallery" style="display: flex; gap: 10px; flex-wrap: wrap;">
@@ -196,69 +147,27 @@
               </div>
             </div>
         </div>
+        </div>
       </div>
-
-    <!-- Modal 2 -->
-    <div id="modal2" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal2')">&times;</span>
-        <h2>Specifications</h2>
-        <div class="product-details">
-          <table class="details-table" border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-            <tr>
-              <th>Category</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <th>Overview</th>
-              <td>
-                Lufkin Gears low-speed, increasing, reduction, and parallel shaft gears are used with turbines, pumps, electric motors, generators, and compressors in heavy industries. They are known for reliable performance in demanding applications.
-              </td>
-            </tr>
-            <tr>
-              <th>Rubber and Plastics</th>
-              <td>
-                Lufkin Gears speed reducers are used in tire production for batch mixers, mills, extruders, calendars, and roll mills. Known for their reliability, they offer excellent value for rubber and plastics industries.
-              </td>
-            </tr>
-            <tr>
-              <th>Sugar</th>
-              <td>
-                Lufkin Gears has provided multi-stage speed reducers for the sugar industry for over 50 years. Many mill drives and cane knives are still operational after decades. Custom solutions include parallel shaft and planetary gears for mills and cane diffusers.
-              </td>
-            </tr>
-            <tr>
-              <th>Mining and Aggregate</th>
-              <td>
-                Lufkin Gears technologies support crushers, pumps, slew drives, bucket wheels, conveyor drives, and more in harsh mining environments. Available in various configurations such as horizontal or vertical parallel shaft, angular shaft, and planetary designs.
-              </td>
-            </tr>
-            <tr>
-              <th>Hydro Power</th>
-              <td>
-                Known for reliability in hydro-electric plants, Lufkin Gears parallel-shaft increasers and Allen Gears epicyclic products are widely used in turbine applications, powering some of the world’s largest hydro plants.
-              </td>
-            </tr>
-          </table>
-          <div class="image-gallery" style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <img src="assets/img/Rubber.jpg" alt="Product Image 1" style="width: 24%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
-            <img src="assets/img/mining.jpg" alt="Product Image 2" style="width: 24%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
-            <img src="assets/img/Sugar.jpg" alt="Product Image 3" style="width: 24%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
-            <img src="assets/img/hydro.jpg" alt="Product Image 4" style="width: 24%; height: auto; border: 1px solid #ddd; border-radius: 4px;">
-          </div>
-        </div>        
+      
+      <!-- Modal 2 -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal="modal2">&times;</span>
+          <h2>Compressors</h2>
+          <p>Details about compressors...</p>
+        </div>
       </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div id="modal3" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('modal3')">&times;</span>
-        <h2>Product 3 Details</h2>
-        <p>Here’s some detailed information about Product 2. Vestibulum fermentum sem nec odio tincidunt, ut feugiat elit sodales.</p>
+      
+      <!-- Modal 3 -->
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" data-modal="modal3">&times;</span>
+          <h2>Pumps</h2>
+          <p>Details about pumps...</p>
+        </div>
       </div>
-    </div>
-  </div>
+    
 
   </main><!-- End #main -->
 
