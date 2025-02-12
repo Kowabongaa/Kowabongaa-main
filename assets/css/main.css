@@ -2584,7 +2584,7 @@ sub, sup {
 
 .company-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 15px;
   padding: 20px;
   justify-content: center;
@@ -2596,6 +2596,10 @@ sub, sup {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
   text-align: center;
+  grid-column: auto; 
+  width: 100%; 
+  max-width: 300px; 
+  margin: 0 auto;
 }
 
 .company-card:hover {
