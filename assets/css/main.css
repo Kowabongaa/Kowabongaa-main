@@ -2623,3 +2623,8 @@ sub, sup {
   transition: background 0.3s ease;
 }
 
+.company-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
