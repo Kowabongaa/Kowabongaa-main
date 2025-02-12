@@ -94,11 +94,11 @@
     </div><!-- End Breadcrumbs -->
 
     <div class="product-grid">
-        <!-- Product Item 1: Compressors -->
-        <div class="product-item" onclick="openModal('modal1')" style="cursor: pointer;">
+        <a href="javascript:void(0);" onclick="openModal('modal1')" class="product-item" style="text-decoration: none;">
           <img src="assets/img/compressor.jpg" alt="Compressors">
           <h2>Compressors</h2>
-        </div>
+        </a>
+      </div>
     
       <!-- Product Item 2: Pumps -->
       <div class="product-item">
@@ -122,14 +122,14 @@
       </div>
       
       
-      <!-- Modal 1 -->
-      <div id="modal2" class="modal">
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
         <div class="modal-content">
-          <span class="close" onclick="closeModal('modal1')">&times;</span>
-          <h2>Compressors</h2>
-          <p>Details about compressors...</p>
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Compressors</h2>
+        <p>Details about compressors...</p>
         </div>
-      </div>
+    </div>
       
       <!-- Modal 2 -->
       <div id="modal2" class="modal">
