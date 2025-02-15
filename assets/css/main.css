@@ -2641,3 +2641,18 @@ sub, sup {
   color: #007bff;
   transition: color 0.3s ease;
 }
+
+#pdf-preview {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+}
+
+#pdf-full-view {
+  width: 100%;
+  height: 800px;
+  display: none;
+}

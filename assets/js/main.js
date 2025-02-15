@@ -166,3 +166,32 @@ window.onclick = function(event) {
   });
 };
 
+const pdfUrl = "assets/pdf/TG200.pdf"; // Path to your PDF
+const canvas = document.getElementById("pdf-preview");
+const fullPdfView = document.getElementById("pdf-full-view");
+
+// Load the first page of the PDF using pdf.js
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https://mozilla.github.io/pdf.js/build/pdf.worker.js";
+pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
+  pdf.getPage(1).then(page => {
+    const scale = 1.5;
+    const viewport = page.getViewport({ scale: scale });
+    const context = canvas.getContext("2d");
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
+    const renderContext = {
+      canvasContext: context,
+      viewport: viewport
+    };
+    page.render(renderContext);
+  });
+}).catch(error => {
+  console.error("Error loading PDF preview:", error);
+});
+
+// Show full PDF when the preview is clicked
+canvas.addEventListener("click", () => {
+  canvas.style.display = "none";
+  fullPdfView.style.display = "block";
+});
