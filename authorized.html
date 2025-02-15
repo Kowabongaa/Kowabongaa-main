@@ -100,7 +100,14 @@
 <a href="javascript:void(0);" onclick="openModal('modal1')" class="product-item" style="text-decoration: none;">
   <h2>STP Schneider</h2>
 </a>
-</div>
+
+<a href="javascript:void(0);" onclick="openModal('modal2')" class="product-item" style="text-decoration: none;">
+  <h2>STP Lufkin Allen gears</h2>
+</a>
+
+<a href="javascript:void(0);" onclick="openModal('modal3')" class="product-item" style="text-decoration: none;">
+  <h2>STP Zeus</h2>
+</a>
 
 <!-- Modal 1 -->
 <div id="modal1" class="modal">
@@ -118,33 +125,38 @@
   </div>
 </div>
 
-      
-
-
-  <div class="certification-card">
-    <div class="certification-image">
-      <img src="cert2.jpg" alt="Certification 2">
-    </div>
-    <div class="certification-content">
-      <div class="certification-title">ISO 14001:2015 Certification</div>
-      <div class="certification-description">Environmental Management System certification demonstrating our commitment to sustainability.</div>
-      <button class="view-button" onclick="openModal('modal2')">View Certificate</button>
-    </div>
-  </div>
-
-</div>
-
-
-<!-- Modal for Certificate 2 -->
 <div id="modal2" class="modal">
   <div class="modal-content">
-    <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
-    <h2>ISO 14001:2015 Certification</h2>
-    <img class="modal-image" src="cert2.jpg" alt="Certificate 2">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>STP Lufkin Allen gears</h2>
+    <div class="pdf-container">
+      <iframe 
+        src="assets/STP Kemendag LUFKIN ALLEN GEAR EXP 31102025.pdf" 
+        width="100%" 
+        height="600px" 
+        style="border: none;">
+      </iframe>
+    </div>
   </div>
 </div>
 
-    </main>
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>STP Zeus</h2>
+    <div class="pdf-container">
+      <iframe 
+        src="assets/STP Kemendag Zeus.pdf" 
+        width="100%" 
+        height="600px" 
+        style="border: none;">
+      </iframe>
+    </div>
+  </div>
+</div>
+</div>
+
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
