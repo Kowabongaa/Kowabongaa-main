@@ -3,7 +3,7 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
       delay: 5000, 
-      disableOnInteraction: false, // Keep autoplay running even after user interaction
+      disableOnInteraction: false, 
     },
     pagination: {
       el: ".swiper-pagination",

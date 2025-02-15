@@ -166,7 +166,7 @@ window.onclick = function(event) {
   });
 };
 
-const pdfUrl = "assets/pdf/TG200.pdf"; // Path to your PDF
+const pdfUrl = "../STP Kemendag SCHNEIDER EXP 20270101.pdf"; // Path to your PDF
 const canvas = document.getElementById("pdf-preview");
 const fullPdfView = document.getElementById("pdf-full-view");
 
