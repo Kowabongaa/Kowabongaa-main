@@ -166,13 +166,16 @@ window.onclick = function(event) {
   });
 };
 
-const pdfUrl = "../STP Kemendag SCHNEIDER EXP 20270101.pdf"; // Path to your PDF
+const pdfUrl = "../STP Kemendag SCHNEIDER EXP 20270101.pdf";
 const canvas = document.getElementById("pdf-preview");
 const fullPdfView = document.getElementById("pdf-full-view");
 
-// Load the first page of the PDF using pdf.js
-pdfjsLib.GlobalWorkerOptions.workerSrc = "https://mozilla.github.io/pdf.js/build/pdf.worker.js";
+// Load the PDF.js worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js";
+
+// Fetch and render the first page of the PDF
 pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
+  console.log("PDF Loaded:", pdf.numPages, "pages");
   pdf.getPage(1).then(page => {
     const scale = 1.5;
     const viewport = page.getViewport({ scale: scale });
@@ -187,10 +190,10 @@ pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
     page.render(renderContext);
   });
 }).catch(error => {
-  console.error("Error loading PDF preview:", error);
+  console.error("Error loading PDF:", error);
 });
 
-// Show full PDF when the preview is clicked
+// Click event to show the full PDF
 canvas.addEventListener("click", () => {
   canvas.style.display = "none";
   fullPdfView.style.display = "block";
