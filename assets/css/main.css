@@ -3,12 +3,29 @@
 .project-gallery {
     margin: 50px auto;
     max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
-    color: #0d42ff;
-    text-decoration: underline;
-    margin: 20px 0;
+    width: 80%;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+    border: 1px solid #ddd;
+    display: inline-block;
+}
+
+.project-title:hover {
+    background: #0d42ff;
+    color: white;
 }
