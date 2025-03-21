@@ -46,10 +46,15 @@
     <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>   
+        <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li><a href="projects.html">Project list</a></li>
+            <li><a href="gallery.html">Project Gallery</a></li>
+          </ul>
+        </li>
         <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
             <li><a href="Baker-Hughes.html">Baker Hughes</a></li>
@@ -61,7 +66,7 @@
           </ul>
         </li>
         <li><a href="news.html">News</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         
       </ul>
     </nav><!-- .navbar -->
