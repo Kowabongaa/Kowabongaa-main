@@ -14,7 +14,7 @@
 }
 
 .project-gallery .project-title {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 450;
     color: #222;
     background: #f8f9fa; 
@@ -36,7 +36,6 @@
     color: white;
     transform: translateY(-5px); 
 }
-
 
 .project-gallery .project-title:visited,
 .project-gallery .project-title:active {
