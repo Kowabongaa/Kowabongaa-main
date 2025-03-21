@@ -98,35 +98,32 @@
         <div class="section-header">
             <h2>site under construction</h2>
         </div>
-        <!-- <section class="gallery">
-            <div class="section-header">
-                <h2>Our Projects</h2>
-                <p>Explore our past projects and achievements</p>
-            </div>
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <img src="assets/img/project1.webp" alt="Project 1">
-                    <div class="gallery-info">
-                        <h3>Project 1</h3>
-                        <p>Short description of the project.</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/img/project2.webp" alt="Project 2">
-                    <div class="gallery-info">
-                        <h3>Project 2</h3>
-                        <p>Short description of the project.</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="assets/img/project3.webp" alt="Project 3">
-                    <div class="gallery-info">
-                        <h3>Project 3</h3>
-                        <p>Short description of the project.</p>
-                    </div>
-                </div>
-            </div>
-        </section>-->
+        <section class="project-gallery">
+          <h2>Our Projects</h2>
+          
+          <div class="project">
+              <h3 class="project-title" onclick="openModal('project1')">Project 1</h3>
+              <div id="project1" class="modal">
+                  <div class="modal-content">
+                      <span class="close" onclick="closeModal('project1')">&times;</span>
+                      <img src="assets/img/project1-1.jpg" alt="Project 1 Image 1">
+                      <img src="assets/img/project1-2.jpg" alt="Project 1 Image 2">
+                  </div>
+              </div>
+          </div>
+  
+          <div class="project">
+              <h3 class="project-title" onclick="openModal('project2')">Project 2</h3>
+              <div id="project2" class="modal">
+                  <div class="modal-content">
+                      <span class="close" onclick="closeModal('project2')">&times;</span>
+                      <img src="assets/img/project2-1.jpg" alt="Project 2 Image 1">
+                      <img src="assets/img/project2-2.jpg" alt="Project 2 Image 2">
+                  </div>
+              </div>
+          </div>
+  
+      </section>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
